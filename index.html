@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Manrope:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;0,1000;1,700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Manrope:wght@400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;0,500;1,700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- tailwind custom color -->
@@ -47,17 +47,17 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-4">
+    <header class="container w-[80%] mx-auto mt-4">
         <!-- nav section starts here -->
         <div class="flex justify-between items-center">
             <div class="sm:max-w-xl md:hidden lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg xmlns="http://www.w3.org/500/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M3.75 6.75H20.25M3.75 12H12.5M3.75 17.25H20.25" stroke="#131318" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
 
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-50">
                 <div class="navbar-start">
                     <div class="text-4xl font-extrabold">
                         <h1>Hockey’s</h1>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="navbar-end space-x-2">
                     <button class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/500/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -88,7 +88,7 @@
         <!-- nav section ends here -->
         <!-- banner section starts -->
         <section class="w-auto my-12 h-[500px] object-cover flex justify-center">
-            <div class="relative sm:flex flex-row carousel w-[100%]">
+            <div class="relative sm:flex flex-row carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div
-                    class="absolute sm:w-full w-auto h-[150px] bg-black text-white z-20 top-80 lg:right-32 lg:w-[430px] p-6 rounded-lg">
+                    class="absolute sm:w-full w-auto h-[150px] bg-black text-white z-20 top-80 lg:right-20 lg:w-[430px] p-6 rounded-lg">
 
                     <h3 class="text-white font-bold text-lg mb-4">Meet all the heroes from the field</h3>
                     <p class="text-white opacity-55 pr-6"> They lace up their skates and hit the ice for an exhilarating
@@ -123,7 +123,7 @@
     </header>
     <main>
         <!-- professional hockey club section starts  -->
-        <section class="w-full h-[200px] my-16 grid justify-center items-center">
+        <section class="w-full h-[50px] my-16 grid justify-center items-center">
             <div class="text-center w-auto">
                 <h1 class="text-2xl font-bold mb-3">Professional Hockeys Club</h1>
                 <p class="w-[600px]">Comprising a talented roster of seasoned athletes, each player brings a unique
@@ -132,11 +132,11 @@
         </section>
         <!-- professional hockey club section ends -->
         <!-- card section starts  -->
-        <section class="container mx-auto">
-            <div class="w-auto m-auto flex justify-between my-24 space-x-4">
-                <div class="common-center text-center pt-6 max-w-4xl">
-                    <div class="radial-progress" style="--value:87; color:#FF4240" role="progressbar"><span
-                            class="text-black font-bold">87%</span>
+        <section class="container w-[80%] mx-auto">
+            <div class="w-auto m-auto grid grid-cols-12 my-24 space-x-4">
+                <div class="col-span-3 common-center text-center pt-6 max-w-4xl">
+                    <div class="radial-progress rotate-[140deg]" style="--value:87; color:#FF4240" role="progressbar">
+                        <span class="text-black font-bold -rotate-[140deg]">87%</span>
                     </div>
                     <div>
                         <h3 class="font-bold text-xl my-4">Prayer Facility</h3>
@@ -144,9 +144,9 @@
                             feels welcome and supported, fostering a sense of community among athletes and staff.</p>
                     </div>
                 </div>
-                <div class="common-center text-center pt-6 max-w-4xl">
-                    <div class="radial-progress" style="--value:95; color:#49D293" role="progressbar"><span
-                            class="text-black font-bold">95%</span>
+                <div class="col-span-3 common-center text-center pt-6 max-w-4xl">
+                    <div class="radial-progress rotate-[140deg]" style="--value:95; color:#49D293" role="progressbar">
+                        <span class="text-black font-bold -rotate-[140deg]">95%</span>
                     </div>
                     <div>
                         <h3 class="font-bold text-xl my-4">Experienced Coach</h3>
@@ -154,9 +154,9 @@
                             development, and contribute to the overall success of the hockey program.</p>
                     </div>
                 </div>
-                <div class="common-center text-center pt-6 max-w-4xl">
-                    <div class="radial-progress" style="--value:90; color:#FFB546" role="progressbar"><span
-                            class="text-black font-bold">90%</span>
+                <div class="col-span-3 common-center text-center pt-6 max-w-4xl">
+                    <div class="radial-progress rotate-[140deg]" style="--value:90; color:#FFB546" role="progressbar">
+                        <span class="text-black font-bold -rotate-[140deg]">90%</span>
                     </div>
                     <div>
                         <h3 class="font-bold text-xl my-4">Senior Player</h3>
@@ -165,9 +165,9 @@
                             off the field.</p>
                     </div>
                 </div>
-                <div class="common-center text-center pt-6 max-w-4xl">
-                    <div class="radial-progress" style="--value:80; color:#4C8DF1" role="progressbar"><span
-                            class="text-black font-bold">80%</span>
+                <div class="col-span-3 common-center text-center pt-6 max-w-4xl">
+                    <div class="radial-progress rotate-[140deg]" style="--value:80; color:#4C8DF1" role="progressbar">
+                        <span class="text-black font-bold -rotate-[140deg]">80%</span>
                     </div>
                     <div>
                         <h3 class="font-bold text-xl my-4">Training Ground</h3>
@@ -181,7 +181,7 @@
         <!-- card section ends -->
 
         <!-- Program Sections starts -->
-        <section class="w-full h-[200px] my-16 grid justify-center items-center">
+        <section class="w-full h-[50px] my-16 grid justify-center items-center">
             <div class="text-center w-auto">
                 <h1 class="text-2xl font-bold mb-3">Program Sections</h1>
                 <p class="w-[600px]">A well-structured program ensures a holistic approach to player development, team
@@ -228,8 +228,9 @@
             </div>
         </div>
         <!-- program photos gallery section ends -->
+
         <!-- Our New Products section starts  -->
-        <section class="w-full h-[200px] my-16 grid justify-center items-center">
+        <section class="w-full h-[50px] my-16 grid justify-center items-center">
             <div class="text-center w-auto">
                 <h1 class="text-2xl font-bold mb-3">Our New Products</h1>
                 <p class="w-[600px]">Our cutting-edge lineup includes high-performance composite hockey sticks,
@@ -255,7 +256,7 @@
                                 <p><i class="fa-regular fa-eye"></i>20</p>
                             </div>
                             <div>
-                                <p><i class="fa-regular fa-heart"></i>200</p>
+                                <p><i class="fa-regular fa-heart"></i>50</p>
                             </div>
                         </span>
                         <h3 class="mt-4 text-2xl font-bold">World Cup Football Jacket</h3>
@@ -315,7 +316,8 @@
                             </div>
                         </span>
                         <h3 class="mt-4 text-2xl font-bold">Cap For Hockeys</h3>
-                        <p class="my-4"> Elevate your football experience, and let the flags fly high as we come together in the spirit of international competition.</p>
+                        <p class="my-4"> Elevate your football experience, and let the flags fly high as we come
+                            together in the spirit of international competition.</p>
                         <div class="flex justify-between">
                             <h4 class="text-xl font-bold text-red-600">Price- $25.00</h4>
                             <div class="flex items-center gap-3 mr-12"><i
@@ -412,9 +414,218 @@
             </div>
         </section>
         <!-- our new Products container ends here  -->
-    </main>
-    <footer>
 
+        <!-- frequently ask questions section starts  -->
+        <section class="w-[80%] my-12 m-auto gap-6 bg-blue-100">
+            <div class="w-full mb-16 h-[50px] grid justify-center items-center ">
+                <div class="text-center w-auto mb-14">
+                    <h1 class="text-2xl font-bold mb-3">Clients Question</h1>
+                    <p class="w-[600px]">For our high-performance composite hockey sticks, engineered for optimal power
+                        and precision in every shot. The innovative design ensures lightweight durability, giving
+                        players an edge on the ice. </p>
+                </div>
+            </div>
+            <div class="flex mt-20">
+                <div class="grid items-center object-cover w-[30%]">
+                    <p class="text-center text-4xl font-bold">Frequently <br>Ask Questions</p>
+                    <img src="Images/11.png" alt="">
+                </div>
+
+                <div class="grid w-[70%] shadow-xl rounded-sm">
+                    <div class="collapse collapse-plus bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>Discover excellence with our latest hockey equipment. From precision-engineered sticks
+                                that redefine your shot to high-performance gloves offering unmatched control, our gear
+                                is designed to enhance your game. Our goalie pads combine cutting-edge technology with
+                                superior protection, ensuring you can guard the net with confidence. Complete your kit
+                                with our customizable team jerseys and top-of-the-line training accessories. Elevate
+                                your play, dominate the ice—choose the best with our hockey equipment.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>The Professional Program is not just about achieving success on the scoreboard but also
+                                fostering a mindset of continuous improvement and adaptability in the highly competitive
+                                world of professional hockey.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Led by experienced coaches, these personalized sessions provide targeted feedback to
+                                address specific areas of improvement. From stickhandling drills to game-situation
+                                simulations, our private training is designed to unlock your full potential on the ice.
+                                Elevate your skills with one-on-one attention and take your hockey journey to the next
+                                level.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>Elevate your game with our private hockey training. Tailored for individualized growth,
+                                our sessions focus on refining skills, enhancing agility, and boosting overall
+                                performance. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p> well-structured program ensures a holistic approach to player development, team
+                                dynamics, and overall success on the ice.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus  bg-blue-50 rounded-none">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content">
+                            <p> From high-performance sticks to protective equipment and personalized training sessions,
+                                our pricing is designed to suit every player's needs and budget. Check out our product
+                                catalog for detailed pricing information and special offers. Elevate your hockey
+                                experience with quality equipment and services at affordable prices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- frequently ask questions section ends -->
+
+        <!-- get in touch section starts  -->
+        <section class="container w-[80%] m-auto bg-stone-50 rounded-md py-6">
+            <div class="w-full h-[50px] my-16 grid justify-center items-center">
+                <div class="text-center w-auto">
+                    <h1 class="text-2xl font-bold mb-3">Get In Touch</h1>
+                    <p class="w-[600px]">Any opinion or queries you can ask or message us without any hesitation</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-6 p-10">
+                <div class="grid col-span-4 space-y-4">
+                    <div class="p-6 space-y-6 bg-[#BCED6D1A]">
+                        <img src="Images/12.png" alt="">
+                        <p>Phone Number : <br> 
+                            <span class="font-bold">(+62) 123-321-543</span> </p>
+                            
+                    </div>
+                    <div class="p-6 space-y-6 bg-[#FDDD5F1A]">
+                        <img src="Images/13.png" alt="">
+                        <p>Email : <br> 
+                            <span class="font-bold">hockeys@support.com</span> </p>
+                    </div>
+                    <div class="p-6 space-y-6 bg-[#629CF31A]">
+                        <img src="Images/14.png" alt="">
+                        <p>Location: <br>
+                            <span class="font-bold">152/1 Mohakhali Wireless Gate</span> </p>
+                    </div>
+                </div>
+                <div class="col-span-8 space-y-6">
+                    <div class="flex justify-between">
+                        <div class="">
+                            <h3 class="text-xl font-semibold mb-3">Your Name</h3>
+                            <input class="pl-4 w-[324px] h-[64px] bg-slate-100 col-span-4" type="text" placeholder="Enter your name:">
+                        </div>
+                        <div class="">
+                            <h3 class="text-xl font-semibold mb-3">Your Email</h3>
+                            <input class="pl-4 w-[324px] h-[64px] bg-slate-100 col-span-4" type="text" placeholder="Enter your email:">
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <h3 class="text-xl font-semibold mb-3">Subject</h3>
+                            <input class="pl-4 w-[324px] h-[64px] bg-slate-100 col-span-4" type="text" placeholder="Enter your subject:">
+                        </div>
+                        <div class="">
+                            <h3 class="text-xl font-semibold mb-3">Phone Number</h3>
+                            <input class="pl-4 w-[324px] h-[64px] bg-slate-100 col-span-4" type="text" placeholder="Enter phone number">
+                        </div>
+                    </div>
+                    <div class="col-span-8">
+                        <h3 class="text-xl font-semibold mb-3">Message</h3>
+                        <textarea class="pl-4  bg-slate-100 w-full h-[200px]" placeholder="Write your message" name="text" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="col-span-8">
+                        <button class="bg-red-700 w-full text-white font-semibold p-4 rounded-md">Send Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- social icons section  -->
+            <div class="w-full h-[200px] my-10 grid justify-center items-center bg-slate-100">
+                <div class="text-center w-auto">
+                    <h1 class="text-2xl font-bold mb-3">Social Media</h1>
+                    <div class="space-x-8">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- get in touch section ends  -->
+    </main>
+    <footer class="bg-black py-20 text-white flex justify-evenly px-28">
+        <div class="w-[40%] space-y-4">
+            <h1 class="text-xl font-bold">Get In Touch</h1>
+            <p class="w-[350px] opacity-60">For our high-performance composite hockey sticks, engineered for optimal
+                power
+                and precision in every shot. The innovative design ensures lightweight durability, giving
+                players an edge on the ice. </p>
+            <div class="opacity-60">
+                <a class="font-semibold" href="#"><i
+                        class="fa-regular fa-envelope text-[#FF4240] mr-2"></i>hockeys@support.com</a>
+                <h3 class="font-bold"> <i class="fa-solid fa-phone  text-[#FF4240] mr-2"></i>(+62) 123-321-543</h3>
+            </div>
+        </div>
+        <div class="flex justify-between w-[60%]">
+            <div class="grid">
+                <h3 class="text-xl font-bold">Company</h3>
+                <div class="opacity-60 space-y-2">
+                    <p>About Us</p>
+                    <p>Leadership</p>
+                    <p>Careers</p>
+                    <p>News & Article </p>
+                    <p>Legal Notice</p>
+                </div>
+            </div>
+            <div class="grid">
+                <h3 class="text-xl font-bold">Support</h3>
+                <div class="opacity-60 space-y-2">
+                    <p>Help Center</p>
+                    <p>FAQ</p>
+                    <p>Ticket Support</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <div class="grid">
+                <h3 class="text-xl font-bold">Services</h3>
+                <div class="opacity-60 space-y-2">
+                    <p>Academy</p>
+                    <p>Group Lessons</p>
+                    <p>Private Lessons</p>
+                    <p>Hockey for Kids</p>
+                    <p>Hockey for Adults</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
